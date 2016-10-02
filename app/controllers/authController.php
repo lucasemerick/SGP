@@ -25,7 +25,7 @@ class Auth extends Controller {
     }
 
     public function Cadastrar() {
-        $nome = $this->post('nome');
+        $nome = $this->post('nome') . " " . $this->post('ult_nome');
         $email = $this->post('email');
         $senha = $this->post('senha');
         if ($nome == "" || $email == "" || $senha == "") {
