@@ -6,7 +6,7 @@ class Model {
     public $_tabela;
 
     public function __construct() {
-        $this->db = new PDO('mysql:host=localhost;dbname=hypertestdb', 'root', '');
+        $this->db = new PDO('mysql:host=localhost;dbname=sgp_database', 'root', '');
         $this->db->exec("set names utf8");
     }
 
